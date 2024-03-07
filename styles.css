@@ -1,0 +1,334 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+body {
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: rgb(57, 123, 247);
+    display: grid;
+    grid-template-rows: 50px 300px 150px;
+    grid-template-columns: 50px 1fr;
+    row-gap: 40px;
+    font-weight: 900;
+}
+
+.logo {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.top-nav {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+}
+
+.nav-text {
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.bottom-nav {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.main {
+    grid-column: 2;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+
+.top-bar {
+    padding-top: 20px;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 1fr;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#searchbox {
+    flex: 1;
+    background-color: rgb(236, 236, 236);
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid lightgrey;
+}
+
+.welcome-bar {
+    gap: 20px;
+    padding-left: 40px;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-content: center;
+    justify-items: center;
+}
+
+.hi-there {
+    align-self: center;
+    justify-self: flex-start;
+    height: 55px;
+}
+
+.morgan {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.log-in {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+h3 {
+    height: 10px;
+    font-size: 1.4rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    padding-right: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    flex: 1;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    background-color: burlywood;
+    height: 50px;
+}
+
+.card-container {
+    grid-row: 2;
+    background-color: rgb(236, 236, 236);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 400px 50px 400px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.boxy {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    align-self:flex-end;
+}
+
+.projects {
+    display: grid;
+    grid-row: 2 / 5;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.title-p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.stripe {
+    background-color: goldenrod;
+}
+
+.inner-card {
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 15px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-a {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 15px;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(4, 50px);
+    padding: 40px;
+    align-content: space-between;
+}
+
+.title-t {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.title-a,
+.title-p,
+.title-t {
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 900;
+}
+
+.break-line {
+    height: 1px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    font-weight: 900;
+}
+
+.a-text {
+    font-size: 1rem;
+}
+
+.project-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
