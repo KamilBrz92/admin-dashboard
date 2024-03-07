@@ -45,11 +45,12 @@ table {
 /* END RESET */
 
 body {
-    display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr;
+    background-color: rgb(236, 236, 236);
+    min-height: 100vh;
 }
 
 .sidebar {
